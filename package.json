@@ -1,0 +1,24 @@
+{
+  "name": "yt-to-local",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn ./src/index.ts  --transpileOnly",
+    "build": "tsc -p .",
+    "start": "node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/node": "^22.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.3",
+    "youtube-dl-exec": "^3.0.10"
+  }
+}
